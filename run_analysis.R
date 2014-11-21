@@ -56,7 +56,8 @@ getData <- function(featuresFileUrl, dataFileUrl, activityFileUrl, subjectFileUr
   x_data_mean_std$activity <- y_data
   print('Done.')
   
-  
+  ## SUBJECT
+  ## 
   ## Incorporate the subject variable to the data
   print('Incorporating subject...')
   subject <- scan(subjectFileUrl)
@@ -129,10 +130,11 @@ run <- function(wd) {
   names(x_data_l) <- varNames
   print('Done.')
   
-  print(paste('Writing out the tidy summary file to ', paste(wd, 'tidy_summary_data.csv', sep = '/')))
+  print(paste('Writing out the tidy summary file to ', paste(wd, 'tidy_summary_data.txt', sep = '/')))
   x_data_f <- tbl_df(x_data_l) %>%
     arrange(SUBJECT, ACTIVITY) %>%
-      write.table(file = paste(wd, 'tidy_summary_data.csv', sep = '/'), quote = T, sep = ',', row.names = F)
+        write.table(file = paste(wd, 'tidy_summary_data.txt', sep = '/'), quote = T, sep = ',', row.names = F)
 
-  print('Done.')
+  names(x_data_l)
+  # print('Done.')
 }

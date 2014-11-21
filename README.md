@@ -28,3 +28,8 @@
 	contains the assignment data. I've assumed that you have NOT tampered with the structure 
 	of this directory.
 	
+	Also, note that all paths MUST use forward slashes even on Windows operating systems. Example:
+	
+	> C:/ws/r/data/sensor_data Correct
+	> C:\ws\r\data\sensor_data Incorrect
+	
