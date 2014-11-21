@@ -23,3 +23,8 @@
 	
 5. Run the analysis by running the following command from R console:
 	> run('/path/to/assignment/data/root/folder')
+	
+	Replace '/path/to/assignment/data/root/folder' with the actual path to the root directory that
+	contains the assignment data. I've assumed that you have NOT tampered with the structure 
+	of this directory.
+	
