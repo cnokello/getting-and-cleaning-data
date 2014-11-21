@@ -1,3 +1,16 @@
+###
+### author: cnokello
+### created: 18-Nov-2014
+### updated: 21-Nov-2014
+### This script analyses the activity sensor data at 
+### http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+### by following instructions presented at the Coursera's Getting and Cleaning Data course
+### in the Data Science Specialization 
+### All functionality needed to process the data is in this one script.
+###
+
+### 
+### Import required packages
 library(dplyr)
 library(data.table)
 library(reshape)
@@ -87,6 +100,8 @@ run <- function(wd) {
     group_by(subject, activity) %>%
       summarise_each(funs(mean)) %>%
         as.data.frame()
+  
+  print('Done.')
   
   # x_data_m <- melt(x_data, id.vars = c("subject", "activity"))
   # x_data_agg <- dcast(x_data_m, subject + activity ~ variable, fun = mean)
