@@ -46,6 +46,7 @@
 	
 	
 **How it works**
+
 The 'run_analysis.R' script has two functions:
 run(wd = getwd()): This has one optional parameter, wd, which points to the base directory of the assignment data. 
 The function begins the analysis by setting:  
