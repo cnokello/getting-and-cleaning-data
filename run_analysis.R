@@ -28,8 +28,8 @@ getData <- function(featuresFileUrl, dataFileUrl, activityFileUrl, subjectFileUr
   names(features) <- c('id', 'name')
   
   ## Mean and Standard Deviation variables
-  mean_variables <- grep('mean', features$name, value = T, perl = T)
-  std_variables <- grep('std', features$name, value = T, perl = T)
+  mean_variables <- grep('mean\\(\\)', features$name, value = T, perl = T)
+  std_variables <- grep('std\\(\\)', features$name, value = T, perl = T)
   mean_std_variables <- c(mean_variables, std_variables)
   print('Done.')
   
@@ -135,6 +135,6 @@ run <- function(wd = getwd()) {
     arrange(SUBJECT, ACTIVITY) %>%
         write.table(file = paste(wd, 'tidy_summary_data.txt', sep = '/'), quote = T, sep = ',', row.names = F)
 
-  names(x_data_l)
-  # print('Done.')
+  # names(x_data_l)
+  print('Done.')
 }

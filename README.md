@@ -44,8 +44,18 @@
 	
 	> C:\ws\r\data\sensor_data is incorrect
 	
+
+**RESULT**
+
+Running the analysis produces a text file. The R code that writes the file is:
+
+	> write.table(file = paste(wd, 'tidy_summary_data.txt', sep = '/'), quote = T, sep = ',', row.names = F)
 	
-**How it works**
+From above, you can deduce that the name of the file is 'tidy_summary_data.txt' and it's stored in the root directory of your workspace. When the analysis script is done, you'll see an output indicating the name and path of the above text file. You can also deduce that the file written is a *CSV* file delimited with a comma(,) and with character fields quoted.
+
+You can open the generated file using a spreadsheet application like MS Excel or OpenOffice Calc. 
+	
+**HOW IT WORKS**
 
 The 'run_analysis.R' script has two functions:
 
