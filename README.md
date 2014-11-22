@@ -1,4 +1,4 @@
-**Instructions** 
+**HOW TO RUN** 
 
 1. In R console, use the command below to set the working directory to the base directory of the assignment data
    > setwd('/path/to/assignment/data/base/directory')
