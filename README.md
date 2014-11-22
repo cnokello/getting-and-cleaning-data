@@ -48,7 +48,10 @@
 **How it works**
 
 The 'run_analysis.R' script has two functions:
-run(wd = getwd()): This has one optional parameter, wd, which points to the base directory of the assignment data. 
+
+**run(wd = getwd())**:
+
+This has one optional parameter, wd, which points to the base directory of the assignment data. 
 The function begins the analysis by setting:  
 * Path to training data 
 * Path to test data 
@@ -59,6 +62,8 @@ It calls another function, getData, that loads both the training and test data s
 Then, by using chaining and dplyr's group_by and summarise_each functions, it groups the data set by subject and activity and applies the mean function column-wise. It then incorporates activity labels into the data set. Finally, by using a combination of lapply and regular expression functions, it renames the variable names.
 This function is called once during the analysis.
 
-getData(featuresFileUrl, dataFileUrl, activityFileUrl, subjectFileUrl): This function is used to load both training and test data sets, extract mean and standard deviation related variables and incorporate activity and subject variables.
+**getData(featuresFileUrl, dataFileUrl, activityFileUrl, subjectFileUrl)**: 
+
+This function is used to load both training and test data sets, extract mean and standard deviation related variables and incorporate activity and subject variables.
 
 It's called twice; once for training data set and once for test data set.
