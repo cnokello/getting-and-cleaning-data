@@ -1,6 +1,6 @@
 **Code Book**
-* SUBJECT: The Subject IDs transformed into integer, SUBJECT (unique) (1-30)
-* ACTIVITY: The activity performed by each SUBJECT was transformed into a factor, ACTIVITY(levels LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
+* _SUBJECT_: The Subject IDs transformed into integer, SUBJECT (unique) (1-30)
+* _ACTIVITY_: The activity performed by each SUBJECT was transformed into a factor, ACTIVITY(levels LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
 * TBODYACC_MEAN_X: Body acceleration mean value in the time domain in the X direction measured in Hz. Transformed as a double.
 * TBODYACC_MEAN_Y: Body acceleration mean value in the time domain in the Y direction measured in Hz. Transformed as a double.
 * TBODYACC_MEAN_Z: Body acceleration mean value in the time domain in the Z direction measure in Hz. Transformed as a double.
