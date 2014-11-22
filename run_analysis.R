@@ -73,7 +73,7 @@ getData <- function(featuresFileUrl, dataFileUrl, activityFileUrl, subjectFileUr
 ### NOTE: On Windows operating system, forward slashes ('/') MUST be used in file paths
 ### Example: 'C:/ws/r/data/sensor_data'
 ###
-run <- function(wd) {
+run <- function(wd = getwd()) {
   ### General file path setup
   activity_label_file_url = paste(wd, 'activity_labels.txt', sep = '/')
   features_file_url <- paste(wd, 'features.txt', sep = '/')
