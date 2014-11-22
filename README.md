@@ -70,10 +70,10 @@ This function is called once during the analysis.
 
 This function is used to:
 
-* Load both training data set
-* Load test data sets 
+* Load training data set
+* Load test data set
 * Extract mean and standard deviation related variables 
 * Incorporate activity variable 
-* Incorporate subject variables.
+* Incorporate subject variable.
 
 It's called twice; once for training data set and once for test data set.
