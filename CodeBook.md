@@ -1,4 +1,9 @@
 **Code Book**
+**Background**: This work is based on data collected on human activity recognition using smart phones. More on this experiment is available at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+
+**Processed Data**: The processed data is a mean value and standard deviation summary of the data collected. The summary is by subject and activity performed by the subject. Subject was coded as an integer between 1 and 30. Activity performed by each subject was coded a factor. Details of the summary variables is below:
+
 * **SUBJECT**: The Subject IDs transformed into integer, SUBJECT (unique) (1-30)
 * **ACTIVITY**: The activity performed by each SUBJECT was transformed into a factor, ACTIVITY(levels LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
 * **TBODYACC_MEAN_X**: Body acceleration mean value in the time domain in the X direction measured in Hz. Transformed as a double.
