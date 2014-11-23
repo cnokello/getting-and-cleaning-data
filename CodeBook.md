@@ -1,4 +1,5 @@
 **Code Book**
+
 **Background**: This work is based on data collected on human activity recognition using smart phones. More on this experiment is available at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 
